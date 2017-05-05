@@ -25,4 +25,8 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 
 </bean>
 
+<bean id="restBean" class="org.course.springthree.ResturantFactory">
+<property name="welcome" value="Hey Genius!"/>
+</bean>
+<bean class="org.course.springthree.DempBeanFactoryPostProcessor"/>
 </beans>
