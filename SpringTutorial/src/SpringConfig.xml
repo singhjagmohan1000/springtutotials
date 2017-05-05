@@ -26,7 +26,12 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 </bean>
 
 <bean id="restBean" class="org.course.springthree.ResturantFactory">
-<property name="welcome" value="Hey Genius!"/>
+<property name="welcome" value="${welcome} "/>
 </bean>
-<bean class="org.course.springthree.DempBeanFactoryPostProcessor"/>
+<!-- <bean class="org.course.springthree.DempBeanFactoryPostProcessor"/>  -->
+<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+<property name="locations">
+<value>classpath:spring.properties</value>
+</property>
+</bean>
 </beans>
