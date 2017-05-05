@@ -7,7 +7,8 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 <!-- <bean/> definitions here -->
 
 <bean id="resturantBean" class="org.course.springcore.Resturant">
-<constructor-arg ref="teaBean"/>
+<!-- <constructor-arg ref="teaBean"/> -->
+<property name="hotDrink" ref="teaBean"/>
 </bean>
 <bean id="teaBean" class="org.course.springcore.Tea">
 
