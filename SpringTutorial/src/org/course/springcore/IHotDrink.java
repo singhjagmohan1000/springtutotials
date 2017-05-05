@@ -1,5 +1,5 @@
 package org.course.springcore;
 
 public interface IHotDrink {
-	public void prepareDrink();
+	public void prepareHotDrink();
 }
