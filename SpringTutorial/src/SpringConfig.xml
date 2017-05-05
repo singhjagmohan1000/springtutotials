@@ -10,6 +10,17 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 <!-- <constructor-arg ref="teaBean"/> -->
 <property name="hotDrink" ref="teaBean"/>
 </bean>
+<bean id="resturantWaiterBean" class="org.course.springtwo.ResturantWaiters">
+<property name="resturantWaiters">
+<list>
+<value>Deol</value>
+<value>Ankit</value>
+<value>Manjeet</value>
+<value>Chandeep</value>
+
+</list>
+</property>
+</bean>
 <bean id="teaBean" class="org.course.springcore.Tea">
 
 </bean>
